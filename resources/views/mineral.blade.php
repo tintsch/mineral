@@ -1,4 +1,5 @@
 <!doctype html>
+<html>
 <head>
     <meta charset="UTF-8" />
 
@@ -8,31 +9,27 @@
 </head>
 <body>
 
-<div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
-    <div class="flex-shrink-0">
-        XYZ
-    </div>
-    <div>
-        <div class="text-xl font-medium text-black"></div>
-        <p class="text-gray-500"></p>
-    </div>
-</div>
-
-<div class="py-8 px-8 max-w-sm mx-auto bg-white rounded-xl shadow-md space-y-2 sm:py-4 sm:flex sm:items-center sm:space-y-0 sm:space-x-6">
-    <img class="block mx-auto h-24 rounded-full sm:mx-0 sm:flex-shrink-0" src="/img/erin-lindford.jpg" alt="Woman's Face">
-    <div class="text-center space-y-2 sm:text-left">
-        <div class="space-y-0.5">
-            <p class="text-lg text-black font-semibold">
-                <?= $mineral->name ?>
-            </p>
-            <p class="text-gray-500 font-medium">
+<div class="p-10">
+    <!--Card 1-->
+    <div class="max-w-sm rounded overflow-hidden shadow-lg">
+        <img class="w-full" src="https://sep.yimg.com/ty/cdn/yhst-135466925550166/jj517.JPG" alt="Mountain">
+        <div class="px-6 py-4">
+            <div class="font-bold text-xl mb-2"><?= $mineral->name ?></div>
+            <div class="font-bold text-l mb-2"><?= $mineral->title ?></div>
+            <p class="text-gray-700 text-base">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis eaque, exercitationem praesentium nihil.
                 <?= $mineral->text1 ?>
             </p>
         </div>
-        <button class="px-4 py-1 text-sm text-purple-600 font-semibold rounded-full border border-purple-200 hover:text-white hover:bg-purple-600 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-offset-2">Message</button>
+        <div class="px-6 pt-4 pb-2">
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#gold</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#gr</span>
+            <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#bergwerk</span>
+        </div>
+        <div class="text-gray-300 px-6 text-xs italic mb-4">Inventar Nr. <?= $mineral->number ?></div>
     </div>
 </div>
 
 
-
 </body>
+</html>
